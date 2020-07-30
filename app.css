@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.Wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40vw;
+  /* height: 30vh; */
+}
+.capacity {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.box {
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid rgba(0, 0, 0, 0.493);
+  cursor: pointer;
+}
+.wall {
+  background: rgb(58, 58, 245);
+}
+.arrow {
+  background: rgb(240, 54, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.arrow::after {
+  content: ">";
+}
+.target {
+  background: rgb(17, 16, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+.target::after {
+  content: "*";
+}
+.searched {
+  background: rgb(252, 143, 161);
+}
+.unclicable {
+  pointer-events: none;
+}
